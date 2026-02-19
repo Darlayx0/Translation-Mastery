@@ -181,15 +181,6 @@ const MenuPage = () => {
 
                     <div className="flex items-center gap-3">
                         <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            onClick={() => { playSFX('click'); navigate('/reflex'); }}
-                            className="flex items-center justify-center gap-2 p-3 md:px-4 md:py-3.5 bg-rose-50 dark:bg-rose-500/10 border border-rose-200 dark:border-rose-500/30 rounded-xl md:rounded-2xl shadow-sm hover:shadow-lg hover:bg-rose-500 hover:border-rose-500 dark:hover:bg-rose-500 dark:hover:border-rose-500 text-rose-500 hover:text-white transition-all backdrop-blur-sm group"
-                        >
-                            <Zap className="w-5 h-5 md:w-6 md:h-6" />
-                            <span className="hidden md:inline font-bold text-sm">Reflex Arena</span>
-                        </motion.button>
-                        <motion.button
                             whileHover={{ scale: 1.05, rotate: 90 }}
                             whileTap={{ scale: 0.95 }}
                             onClick={() => { setIsSettingsOpen(true); playSFX('click'); }}

@@ -4,9 +4,6 @@ import Layout from './components/Layout';
 import MenuPage from './pages/MenuPage';
 import PracticePage from './pages/PracticePage';
 import ResultPage from './pages/ResultPage';
-import ReflexMenuPage from './pages/ReflexMenuPage';
-import ReflexGamePage from './pages/ReflexGamePage';
-import ReflexResultPage from './pages/ReflexResultPage';
 import { aiService } from './services/AIService';
 import { ThemeProvider } from './context/ThemeContext';
 import SettingsModal from './components/SettingsModal';
@@ -54,9 +51,6 @@ function App() {
               <Route path="/" element={<MenuPage />} />
               <Route path="/practice" element={<PracticePage />} />
               <Route path="/result" element={<ResultPage />} />
-              <Route path="/reflex" element={<ReflexMenuPage />} />
-              <Route path="/reflex/game" element={<ReflexGamePage />} />
-              <Route path="/reflex/result" element={<ReflexResultPage />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </Layout>
